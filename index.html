@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>尖局团春-最好的相声网站</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link media="(max-width:768px)" rel="stylesheet" type="text/css" href="css/meiTiChaXun.css">
+    <link media="(min-width:769px)" rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/vue.css">
+
+</head>
+<body>
+    <header id="headerApp">
+        <div class="userInfo-img"></div>
+        <div class="userInfo-gai"></div>
+        <div class="userInfo">
+            <div class="weibo">
+                <a href="#" class="weiboname">路人甲制造微博</a>
+                <a href="#" class="logoname"><img src="images/jianju_03.png" alt=""></a>
+            </div>
+            <div class="userZhongxin">
+            <ul>
+                <li>
+                    <input type="text" class="form-control shurukuang" id="guanjianzi" placeholder="关键字输入">
+                </li>
+                <li>
+                    <a href="#"><img class="sousuotubiao" src="images/sousuo.png" alt=""></a>
+                </li>
+                <li class="kongge"></li>
+                <li><a href="#">历史记录</a></li>
+                <li class="kongge"></li>
+                <li class="username"><a href="#">个人中心</a></li>
+                <li class="usertu"><span class="glyphicon glyphicon-user"></span>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <div class="logo"></div>
+        <nav class="nav">
+            <ul class="nav_num"  v-bind:class="{nav_visible:overflowTF}">
+                <li class="num">
+                    <a href="#">
+                        <div>
+                            <img src="images/home.png" alt="">
+                        </div>
+                        <div class="num_name">
+                            首页
+                        </div>
+                    </a>
+                </li>
+                <li class="num num_kongge"></li>
+                <li class="num">
+                    <a href="#">
+                        <div class="num_tu">
+                            <span>999+</span>
+                        </div>
+                        <div class="num_name">
+                            最新
+                        </div>
+                    </a>
+                </li>
+                <li class="num num_kongge"></li>
+                <li class="num">
+                    <a href="#">
+                        <div class="num_tu">
+                            <span>999+</span>
+                        </div>
+                        <div class="num_name">
+                            郭德纲
+                        </div>
+                    </a>
+                </li>
+                <li class="num num_kongge"></li>
+                <li class="num">
+                    <a href="#">
+                        <div class="num_tu">
+                            <span>999+</span>
+                        </div>
+                        <div class="num_name">
+                            岳云鹏
+                        </div>
+                    </a>
+                </li>
+                <li class="num num_kongge"></li>
+                <li class="num">
+                    <a href="#">
+                        <div class="num_tu">
+                            <span>999+</span>
+                        </div>
+                        <div class="num_name">
+                            张云雷
+                        </div>
+                    </a>
+                </li>
+                <li class="num num_kongge"></li>
+                <li class="num">
+                    <a href="#">
+                        <div class="num_tu">
+                            <span>999+</span>
+                        </div>
+                        <div class="num_name">
+                            孟鹤堂
+                        </div>
+                    </a>
+                </li>
+                <li class="num num_kongge"></li>
+                <li class="num">
+                    <a href="#">
+                        <div class="num_tu">
+                            <span>999+</span>
+                        </div>
+                        <div class="num_name">
+                            张鹤伦
+                        </div>
+                    </a>
+                </li>
+                <li class="num num_kongge"></li>
+                <li class="num">
+                    <a href="#">
+                        <div class="num_tu">
+                            <span>999+</span>
+                        </div>
+                        <div class="num_name">
+                            相妄
+                        </div>
+                    </a>
+                </li>
+                <li class="num num_kongge"></li>
+                <li class="num">
+                    <a href="#">
+                        <div class="num_tu">
+                            <span>999+</span>
+                        </div>
+                        <div class="num_name">
+                            节目
+                        </div>
+                    </a>
+                </li>
+                <li class="num num_kongge"></li>
+                <li class="xiaoshuo">
+                    <img class="xiaoshuo_1" src="images/xiaoshuo_01.png" alt="">
+                    <img class="xiaoshuo_1" src="images/xiaoshuo_02.png" alt="">
+                </li>
+
+            </ul>
+            <div v-on:click="say" class="jiantou glyphicon glyphicon-chevron-down">
+
+            </div>
+            <div class="sj_xszq">
+                <img src="images/xiaoshuo_01.png" alt="">
+                <img src="images/xiaoshuo_02.png" alt="">
+            </div>
+        </nav>
+
+    </header>
+</body>
+<script src="js/header.js"></script>
+</html>
