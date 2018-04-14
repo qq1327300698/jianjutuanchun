@@ -11,4 +11,4 @@ if (window.XMLHttpRequest)
  xmlDoc=xmlhttp.responseXML;
 
  document.getElementById("shiyan").innerHTML=
- xmlDoc.getElementsByTagName("herf")[0].childNodes[0];
+ xmlDoc.getElementsByTagName("herf")[0];
