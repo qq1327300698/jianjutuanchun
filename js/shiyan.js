@@ -6,7 +6,7 @@ if (window.XMLHttpRequest)
  {// code for IE6, IE5
  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
  }
- xmlhttp.open("GET","gdg.xml",false);
+ xmlhttp.open("GET","./xml/gdg.xml",false);
  xmlhttp.send();
  xmlDoc=xmlhttp.responseXML;
 
