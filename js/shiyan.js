@@ -6,9 +6,9 @@ if (window.XMLHttpRequest)
  {// code for IE6, IE5
  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
  }
- xmlhttp.open("GET","./gdg.xml",false);
+ xmlhttp.open("GET","gdg.xml",false);
  xmlhttp.send();
  xmlDoc=xmlhttp.responseXML;
 
  document.getElementById("shiyan").innerHTML=
- xmlDoc.getElementsByTagName("herf")[0].nodeValue;
+ xmlDoc.getElementsByTagName("herf")[0].childNodes[0].nodeValue;
