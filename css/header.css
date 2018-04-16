@@ -90,6 +90,8 @@ header .nav .nav_num .num .num_tu {
 header .nav .nav_num .num .num_tu span {
   background-color: #222;
   color: #eee;
+  padding-left: 2px;
+  padding-right: 2px;
   border-radius: 3px;
 }
 header .nav .nav_num .xiaoshuo {
