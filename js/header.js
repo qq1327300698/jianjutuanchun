@@ -9,22 +9,52 @@ if (window.XMLHttpRequest)
  // xmlhttp.open("GET","./xml/gdg.xml",false);
  // xmlhttp.send();
  // xmlDoc=xmlhttp.responseXML;
- xmlhttp.open("GET","./xml/shuliang.xml",false);
+ xmlhttp.open("GET","./xml/splj.xml",false);
  xmlhttp.send();
  xmlDoc=xmlhttp.responseXML;
 
+function get_nextSibling(n)
+{
+y=n.nextSibling;
+while (y.nodeType!=1)
+  {
+  y=y.nextSibling;
+  }
+return y;
+}
+// function geshu(n){
+//     get_nextSibling(xmlDoc.getElementsByTagName(""))
+// }
+arr=xmlDoc.getElementsByTagName("gdg")[0].getAttribute("data").split("/");
+var zxs=0;
+function zuixin(jname){
+    var myDate=new Date();
+    var zdts=myDate.getDate()-7;
+    var i=0,tian=0;
+    for(i;i<xmlDoc.getElementsByTagName(jname).length;i++){
+        arr=xmlDoc.getElementsByTagName(jname)[i].getAttribute("data").split("/");
+        // alert(Number(arr[1]));
+        // alert(zdts);
+        if(Number(arr[1])>zdts)
+            // alert(message);
+            tian++;
+    }
+    zxs+=tian;
+    // alert(zxs);
+    return tian;
+}
 new Vue({
     el:"#headerApp",
     data:{
         overflowTF: true,
-        zx:xmlDoc.getElementsByTagName("sps")[0].childNodes[0].length,
-        gdg:xmlDoc.getElementsByTagName("gdg")[0].childNodes[0].nodeValue,
-        yyp:xmlDoc.getElementsByTagName("yyp")[0].childNodes[0].nodeValue,
-        zyl:xmlDoc.getElementsByTagName("zyl")[0].childNodes[0].nodeValue,
-        mht:xmlDoc.getElementsByTagName("mht")[0].childNodes[0].nodeValue,
-        zhl:xmlDoc.getElementsByTagName("zhl")[0].childNodes[0].nodeValue,
-        xw:xmlDoc.getElementsByTagName("xw")[0].childNodes[0].nodeValue,
-        jm:xmlDoc.getElementsByTagName("jm")[0].childNodes[0].nodeValue,
+        gdg:zuixin("gdg"),
+        yyp:zuixin("gdg"),
+        zyl:zuixin("gdg"),
+        mht:zuixin("gdg"),
+        zhl:zuixin("gdg"),
+        xw:zuixin("gdg"),
+        jm:zuixin("gdg"),
+        zx:zxs,
     },
     methods:{
         say:function(message){
@@ -32,6 +62,11 @@ new Vue({
             this.overflowTF=false;
             else
             this.overflowTF=true;
+        }
+    },
+    watch:{
+        zx:function(){
+            this.zx=5;
         }
     }
 })
