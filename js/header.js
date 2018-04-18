@@ -46,7 +46,7 @@ function zuixin(jname){
 new Vue({
     el:"#headerApp",
     data:{
-        overflowTF: true,
+        dheight: {height:"48px"},
         gdg:zuixin("gdg"),
         yyp:zuixin("gdg"),
         zyl:zuixin("gdg"),
@@ -58,10 +58,11 @@ new Vue({
     },
     methods:{
         say:function(message){
-            if(this.overflowTF===true)
-            this.overflowTF=false;
+             // alert(this.dheight);
+            if(this.dheight.height=="48px")
+                this.dheight.height='96px';
             else
-            this.overflowTF=true;
+                this.dheight.height='48px';
         }
     },
     watch:{

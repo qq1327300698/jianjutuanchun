@@ -14,6 +14,7 @@ header .userInfo-img {
   width: 100%;
   height: 50px;
   position: absolute;
+  background-position: top center;
   background-image: url("../images/logo.jpg");
   -webkit-filter: blur(4px);
 }
@@ -62,7 +63,7 @@ header .userInfo .userZhongxin .usertu {
 header .logo {
   width: 100%;
   height: 220px;
-  background-position: 0 -50px;
+  background-position: bottom center;
   background-image: url("../images/logo.jpg");
 }
 header .nav {

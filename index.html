@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link media="(max-width:768px)" rel="stylesheet" type="text/css" href="css/meiTiChaXun.css">
     <link media="(min-width:769px)" rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/section.css">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootrtap-js/bootstrap.min.js"></script>
     <script src="js/vue.min.js"></script>
@@ -41,7 +42,7 @@
         </div>
         <div class="logo"></div>
         <nav class="nav">
-            <ul class="nav_num"  v-bind:class="{nav_visible:overflowTF}">
+            <ul class="nav_num"  v-bind:style="[dheight]">
                 <li class="num">
                     <a href="#">
                         <div>
@@ -155,10 +156,11 @@
         </nav>
 
     </header>
-    <!-- <section>
-        <div class="carousel-box">
+    <section>
+    <div class="tuiguang">
+         <div class="carousel-box">
             <div class="carousel-module">
-                <ul>
+                <ul class="carousel-ul">
                     <li>
                         <div>
                             <a href="#"><img src="images/section/4bb9477c4b883dcb1e19e17c0ae75435.jpg" alt="" /></a>
@@ -175,15 +177,98 @@
                         </div>
                     </li>
                 </ul>
+                <ul class="carousel-biaoqian">
+                    <li>
+                        <a href="">
+                            <div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div>
+        <div class="recommend-module">
+            <div class="groom-module">
+                <a href="#" title="【京紫点评】看好的动画，就像与作品谈恋爱">
+                    <img src="images/imgt.jpg" alt="">
+                    <div class="card-mark">
+                        <p class="title">【京紫点评】看好的动画，就像与作品谈恋爱</p>
+                        <p class="gtime">更新时间：2018/4/18</p>
+                        <p class="play">播放：2015次</p>
+                    </div>
+                </a>
+            </div>
+            <div class="groom-module">
+                <a href="#" title="【京紫点评】看好的动画，就像与作品谈恋爱">
+                    <img src="images/imgt.jpg" alt="">
+                    <div class="card-mark">
+                        <p class="title">【京紫点评】看好的动画，就像与作品谈恋爱</p>
+                        <p class="gtime">更新时间：2018/4/18</p>
+                        <p class="play">播放：2015次</p>
+                    </div>
+                </a>
+            </div>
+            <div class="groom-module">
+                <a href="#" title="【京紫点评】看好的动画，就像与作品谈恋爱">
+                    <img src="images/imgt.jpg" alt="">
+                    <div class="card-mark">
+                        <p class="title">【京紫点评】看好的动画，就像与作品谈恋爱</p>
+                        <p class="gtime">更新时间：2018/4/18</p>
+                        <p class="play">播放：2015次</p>
+                    </div>
+                </a>
+            </div>
+            <div class="groom-module">
+                <a href="#" title="【京紫点评】看好的动画，就像与作品谈恋爱">
+                    <img src="images/imgt.jpg" alt="">
+                    <div class="card-mark">
+                        <p class="title">【京紫点评】看好的动画，就像与作品谈恋爱</p>
+                        <p class="gtime">更新时间：2018/4/18</p>
+                        <p class="play">播放：2015次</p>
+                    </div>
+                </a>
+            </div>
+            <div class="groom-module">
+                <a href="#" title="【京紫点评】看好的动画，就像与作品谈恋爱">
+                    <img src="images/imgt.jpg" alt="">
+                    <div class="card-mark">
+                        <p class="title">【京紫点评】看好的动画，就像与作品谈恋爱</p>
+                        <p class="gtime">更新时间：2018/4/18</p>
+                        <p class="play">播放：2015次</p>
+                    </div>
+                </a>
+            </div>
+            <div class="groom-module">
+                <a href="#" title="【京紫点评】看好的动画，就像与作品谈恋爱">
+                    <img src="images/imgt.jpg" alt="">
+                    <div class="card-mark">
+                        <p class="title">【京紫点评】看好的动画，就像与作品谈恋爱</p>
+                        <p class="gtime">更新时间：2018/4/18</p>
+                        <p class="play">播放：2015次</p>
+                    </div>
+                </a>
+            </div>
 
         </div>
-    </section> -->
+    </div>
+
+    </section>
     <div id="shiyan">
 
     </div>
 </body>
 <script src="js/header.js"></script>
+<script src="js/section.js"></script>
 </html>
