@@ -2,6 +2,10 @@ section {
   width: 1160px;
   margin: auto;
 }
+section .tuiguang {
+  height: 300px;
+  margin-bottom: 30px;
+}
 section .tuiguang .carousel-box {
   width: 464px;
   height: 300px;
@@ -77,4 +81,51 @@ section .tuiguang .recommend-module .groom-module:hover a .card-mark .gtime {
 }
 section .tuiguang .recommend-module .groom-module:hover a .card-mark .play {
   color: #999;
+}
+section .tuijian {
+  height: 212px;
+}
+section .tuijian .tuijian_title {
+  width: 119px;
+  height: 30px;
+  margin-bottom: 10px;
+  background-image: url("../images/tuijian.png");
+}
+section .tuijian .tuijian_shuju .tuijian_kuang {
+  padding: 0;
+}
+section .tuijian .tuijian_shuju .tuijian_kuang .tuijian_neirong {
+  width: 200px;
+  height: 172px;
+  float: left;
+  margin-right: 15px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+section .tuijian .tuijian_shuju .tuijian_kuang .tuijian_neirong a {
+  text-decoration: none;
+}
+section .tuijian .tuijian_shuju .tuijian_kuang .tuijian_neirong a img {
+  border-radius: 3px;
+}
+section .tuijian .tuijian_shuju .tuijian_kuang .tuijian_neirong a .nr_xx {
+  width: 200px;
+  height: 47px;
+}
+section .tuijian .tuijian_shuju .tuijian_kuang .tuijian_neirong a .nr_xx .title {
+  transition: color 0.5s;
+  padding-top: 3px;
+}
+section .tuijian .tuijian_shuju .tuijian_kuang .tuijian_neirong a:hover {
+  text-decoration: none;
+}
+section .tuijian .tuijian_shuju .tuijian_kuang .tuijian_neirong a:hover .nr_xx .title {
+  color: #3399FF;
+}
+section .tuijian .tuijian_shuju .tuijian_kuang .tuijian_guanggao {
+  width: 300px;
+  height: 172px;
+  float: left;
+  border-radius: 3px;
+  overflow: hidden;
 }
