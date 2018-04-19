@@ -6,6 +6,7 @@ section .tuiguang .carousel-box {
   width: 464px;
   height: 300px;
   float: left;
+  border-radius: 3px;
 }
 section .tuiguang .carousel-box .carousel-module {
   overflow: hidden;
@@ -23,6 +24,7 @@ section .tuiguang .carousel-box .carousel-module .carousel-ul li {
 section .tuiguang .carousel-box .carousel-module .carousel-ul li img {
   width: 464px;
   height: 300px;
+  border-radius: 3px;
 }
 section .tuiguang .carousel-box .carousel-module .carousel-biaoqian li a div {
   width: 15px;
@@ -41,6 +43,7 @@ section .tuiguang .recommend-module .groom-module {
   height: 145px;
   overflow: hidden;
   float: left;
+  border-radius: 3px;
 }
 section .tuiguang .recommend-module .groom-module .card-mark {
   width: 217px;

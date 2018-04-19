@@ -82,6 +82,7 @@ header .nav .nav_num {
   width: 70%;
   height: 48px;
   float: left;
+  overflow: hidden;
 }
 header .nav .nav_num .num {
   float: left;
